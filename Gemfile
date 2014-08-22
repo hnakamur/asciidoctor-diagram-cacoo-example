@@ -1,5 +1,0 @@
-source 'https://rubygems.org'
-gem 'asciidoctor', '1.5.0'
-gem 'asciidoctor-diagram', github: 'pepijnve/asciidoctor-diagram'
-gem 'asciidoctor-diagram-cacoo', github: 'hnakamur/asciidoctor-diagram-cacoo', branch: 'enhance_by_pepijnve'
-gem 'rake'
