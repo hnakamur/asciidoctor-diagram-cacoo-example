@@ -2,6 +2,7 @@ asciidoctor-diagram-cacoo-example
 =================================
 
 An example asciidoc file containing a diagram created with [Cacoo]( https://cacoo.com ).
+This example needs the [asciidoctor-diagram-cacoo]( https://github.com/hnakamur/asciidoctor-diagram-cacoo ) gem.
 
 ## Setup
 
