@@ -1,0 +1,9 @@
+= asciidoctor-diagram
+
+== asciidoctor-diagram class diagram
+
+["cacoo", "f0MLos8tgXXxaTBv"]
+----
+f0MLos8tgXXxaTBv
+----
+

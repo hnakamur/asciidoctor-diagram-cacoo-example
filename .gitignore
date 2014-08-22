@@ -1,0 +1,5 @@
+.envrc
+*.png
+*.cache
+/sample.html
+/vendor/

@@ -1,0 +1,30 @@
+GIT
+  remote: git://github.com/hnakamur/asciidoctor-diagram-cacoo.git
+  revision: d5172189b4de7e7f9cceff9650538452c4f4f4eb
+  branch: enhance_by_pepijnve
+  specs:
+    asciidoctor-diagram-cacoo (0.2.0)
+
+GIT
+  remote: git://github.com/pepijnve/asciidoctor-diagram.git
+  revision: 53a8c6ec376b17d44781de87a4f1e27edacc887f
+  specs:
+    asciidoctor-diagram (1.2.0)
+      asciidoctor (~> 1.5.0)
+      rjb (~> 1.4.8)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    asciidoctor (1.5.0)
+    rake (10.3.2)
+    rjb (1.4.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  asciidoctor (= 1.5.0)
+  asciidoctor-diagram!
+  asciidoctor-diagram-cacoo!
+  rake
