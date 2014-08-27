@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/hnakamur/asciidoctor-diagram-cacoo.git
-  revision: d5172189b4de7e7f9cceff9650538452c4f4f4eb
+  revision: 4afc0973a2d8dd64873d1f23a5227bc841d41e19
   branch: enhance_by_pepijnve
   specs:
     asciidoctor-diagram-cacoo (0.2.0)
