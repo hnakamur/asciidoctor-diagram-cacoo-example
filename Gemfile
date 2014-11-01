@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'asciidoctor'
 gem 'asciidoctor-diagram', '1.3.0.preview.1'
-gem 'asciidoctor-diagram-cacoo', github: 'hnakamur/asciidoctor-diagram-cacoo'
+gem 'asciidoctor-diagram-cacoo'
 gem 'rake'
 gem 'filewatcher'
+gem 'nokogiri'
