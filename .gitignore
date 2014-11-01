@@ -1,9 +1,6 @@
 .envrc
 *.cache
-<<<<<<< HEAD
-=======
 *.png
 *.xml
 /asciidoctor-fopub/
->>>>>>> master
 /vendor/
