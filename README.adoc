@@ -1,0 +1,41 @@
+== asciidoctor-diagram-cacoo-example
+
+An example asciidoc file containing a diagram created with https://cacoo.com[Cacoo]
+This example needs the https://github.com/hnakamur/asciidoctor-diagram-cacoo[asciidoctor-diagram-cacoo].
+
+=== Setup
+
+----
+bundle install
+----
+
+=== Build html
+
+----
+bundle exec rake html
+----
+
+The output file `sample.html` will be generated.
+You can see the output at http://hnakamur.github.io/asciidoctor-diagram-cacoo-example/sample.html
+
+=== Build pdf
+
+----
+bundle exec rake pdf
+----
+
+The output file `sample.pdf` will be generated.
+You can see the output at http://hnakamur.github.io/asciidoctor-diagram-cacoo-example/sample.pdf
+
+=== File watch mode
+
+----
+bundle exec rake watch TARGET=pdf
+----
+
+You can specify pdf or html for TARGET.
+Whenever you save sample.adoc, pdf or html file will be updated.
+
+=== License
+
+MIT

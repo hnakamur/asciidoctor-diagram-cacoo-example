@@ -1,0 +1,7 @@
+= asciidoctor-diagram-cacoo-example
+
+.DiagramBlockProcessor class diagram
+cacoo::f0MLos8tgXXxaTBv["png", alt="DiagramBlockProcessor class"]
+
+.Source class diagram
+cacoo::Vsw9cGkj8bJjEBr6["png", alt="Source class"]
