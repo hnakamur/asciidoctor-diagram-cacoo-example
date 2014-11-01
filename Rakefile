@@ -17,7 +17,18 @@ rule '.pdf' => '.adoc' do |t|
   unless File.directory? "./asciidoctor-fopub"
     sh "git clone https://github.com/asciidoctor/asciidoctor-fopub"
   end
-  sh "bundle exec asciidoctor -b docbook -d book -r asciidoctor-diagram -r asciidoctor-diagram-cacoo #{t.source} && ./asciidoctor-fopub/fopub #{xml_file} && open #{t.name}"
+  sh %Q{
+    bundle exec asciidoctor -b docbook -d book \
+      -r asciidoctor-diagram -r asciidoctor-diagram-cacoo #{t.source} && \
+    ./asciidoctor-fopub/fopub #{xml_file} \
+      -param alignment left \
+      -param body.font.family VL-PGothic-Regular \
+      -param dingbat.font.family VL-PGothic-Regular \
+      -param monospace.font.family VL-PGothic-Regular \
+      -param sans.font.family VL-PGothic-Regular \
+      -param title.font.family VL-PGothic-Regular && \
+    open #{t.name}
+  }
 end
 
 rule '.html' => '.adoc' do |t|
