@@ -1,5 +1,6 @@
 source_files = Rake::FileList.new("**/*.adoc") do |fl|
   fl.exclude("~*")
+  fl.exclude("README.adoc")
   fl.exclude(%r{\Aasciidoctor-fopub/})
   fl.exclude(%r{\Avendor/})
 end
