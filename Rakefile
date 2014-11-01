@@ -14,13 +14,13 @@ rule '.pdf' => '.adoc' do |t|
   basename = File.basename t.source, '.adoc'
   xml_file = "#{dirname}/#{basename}.xml"
   unless File.directory? "./asciidoctor-fopub"
-	  sh "git clone https://github.com/asciidoctor/asciidoctor-fopub"
+    sh "git clone https://github.com/asciidoctor/asciidoctor-fopub"
   end
-	sh "bundle exec asciidoctor -b docbook -d book -r asciidoctor-diagram -r asciidoctor-diagram-cacoo #{t.source} && ./asciidoctor-fopub/fopub #{xml_file} && open #{t.name}"
+  sh "bundle exec asciidoctor -b docbook -d book -r asciidoctor-diagram -r asciidoctor-diagram-cacoo #{t.source} && ./asciidoctor-fopub/fopub #{xml_file} && open #{t.name}"
 end
 
 rule '.html' => '.adoc' do |t|
-	sh "bundle exec asciidoctor --backend html5 -r asciidoctor-diagram -r asciidoctor-diagram-cacoo -o #{t.name} #{t.source} && open #{t.name}"
+  sh "bundle exec asciidoctor --backend html5 -r asciidoctor-diagram -r asciidoctor-diagram-cacoo -o #{t.name} #{t.source} && open #{t.name}"
 end
 
 task :watch do
