@@ -13,6 +13,10 @@ export CACOO_API_KEY=_Your_Cacoo_API_Key_Here_
 
 https://github.com/zimbatm/direnv[zimbatm/direnv]をお使いの場合は、上記の内容を.envrcというファイルに保存しておいて、以下のコマンドを実行することで、.envrcのファイルが存在するディレクトリにcdしたら自動的に環境変数 `CACOO_API_KEY` が設定されます。
 
+----
+direnv allow .
+----
+
 direnvは https://github.com/hnakamur/macbook_setup[hnakamur/macbook_setup]のプレーブックを使えば簡単にセットアップできます。
 
 === VLゴシックフォントのインストール
