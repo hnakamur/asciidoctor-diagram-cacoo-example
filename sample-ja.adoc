@@ -1,0 +1,60 @@
+== asciidoctor-diagram-cacoo-example
+
+:cacoo_does_download_contents: true
+:cacoo_contents_xml_indent: 0
+
+asciidoctor-diagram-caooを使ってCacooの図を埋め込むサンプルです。
+
+=== APIキーの設定
+
+事前にCacooにログインしてアカウントの設定ページのAPIキータブでAPIキーを発行して、環境変数CACOO_API_KEYに設定しておいてください。
+
+export CACOO_API_KEY=_Your_Cacoo_API_Key_Here_
+
+https://github.com/zimbatm/direnv[zimbatm/direnv]をお使いの場合は、上記の内容を.envrcというファイルに保存しておいて、以下のコマンドを実行することで、.envrcのファイルが存在するディレクトリにcdしたら自動的に環境変数 `CACOO_API_KEY` が設定されます。
+
+direnvは https://github.com/hnakamur/macbook_setup[hnakamur/macbook_setup]のプレーブックを使えば簡単にセットアップできます。
+
+=== VLゴシックフォントのインストール
+
+日本語フォントはVLゴシックフォントを使用しています。asciidoctor-fopubはGoogleのNoto Sans JapaneseのようなOpenTypeフォントはサポートしていないので、VLゴシックのようなTrueTypeフォントを使用する必要があります。
+
+http://vlgothic.dicey.org/download.html[VL Gothic Font Family]のページからVLゴシックフォントをダウンロードしてインストールしておきます。
+
+OS X上でAnsibleをお使いなら
+https://github.com/hnakamur/osx_vlgothic_fonts-ansible_role[hnakamur/osx_vlgothic_fonts-ansible_role]というロールがあります。
+https://github.com/hnakamur/macbook_setup[hnakamur/macbook_setup]のプレーブックを使えば簡単にセットアップできます。
+
+=== AsciiDoc文書へのCacooの図の埋め込み
+
+まずCacooのdiagramIdを知る必要があります。例えば図を表示するURLが
+https://cacoo.com/diagrams/f0MLos8tgXXxaTBv
+であれば、diagramIdはf0MLos8tgXXxaTBvとなります。
+
+あとはAsciiDoc文書内で以下のように書けば、図を埋め込むことが出来ます。
+
+----
+cacoo::f0MLos8tgXXxaTBv["png", alt="DiagramBlockProcessor class"]
+----
+
+=== 実際の例
+
+.DiagramBlockProcessor class diagram
+cacoo::f0MLos8tgXXxaTBv["png", alt="DiagramBlockProcessor class"]
+
+.Source class diagram
+cacoo::Vsw9cGkj8bJjEBr6["png", alt="Source class"]
+
+=== Cacooの図の内容を取得して変更内容をバージョン管理する
+
+AsciiDoc文書内に以下のように書いておくと、Cacooの図の画像を取得する際に、 https://cacoo.com/lang/ja/api_diagram_contents[図の内容取得API]を呼び出して図の内容を `cacoo-\#{diagramId}-contents.xml` (`#{diagramId}` の部分はそれぞれ置き換えられます) というファイル名で保存するようになります。
+
+----
+:cacoo_does_download_contents: true
+:cacoo_contents_xml_indent: 0
+----
+
+このファイルをバージョン管理しておけば、図をどのように変更したかを後から確認することが出来て、便利です。
+
+
+`cacoo_contents_xml_indent` はお好みに応じて2や4に設定してもよいでしょう。ただ、差分をシンプルにするには0のほうが良いかもしれません。
