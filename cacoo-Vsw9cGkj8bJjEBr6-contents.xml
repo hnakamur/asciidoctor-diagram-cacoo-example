@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diagram options="{&quot;pgm&quot;:1,&quot;pgh&quot;:4000,&quot;pgw&quot;:4000,&quot;pgp&quot;:&quot;&quot;}">
+<sheet name="Untitled" uid="7FB84">
+<group uid="997D49D6-1D72-6D83-59B2-17D5F1AC9288" x="206.0" y="49.5" width="183.0" height="100.5" angle="0.0">
+<polygon uid="5611BAE7-787E-4A2C-6AA8-17D5F1AC586B" x="0.0" y="0.0" width="183.0" height="25.0" angle="0.0" fill-style="singleColor" fill-color="#ffffff" fill-opacity="100.0" border-style="normal" border-color="#000000" border-thickness="1">
+<path close="true">
+<point type="NORMAL" x="0.0" y="0.0"/>
+<point type="NORMAL" x="183.0" y="0.0"/>
+<point type="NORMAL" x="183.0" y="25.0"/>
+<point type="NORMAL" x="0.0" y="25.0"/>
+</path>
+</polygon>
+<polygon uid="A7787CBA-2137-9C6F-AD57-17D5F1AC6AFF" x="0.0" y="25.0" width="183.0" height="75.5" angle="0.0" fill-style="singleColor" fill-color="#ffffff" fill-opacity="100.0" border-style="normal" border-color="#000000" border-thickness="1">
+<path close="true">
+<point type="NORMAL" x="0.0" y="0.0"/>
+<point type="NORMAL" x="183.0" y="0.0"/>
+<point type="NORMAL" x="183.0" y="75.5"/>
+<point type="NORMAL" x="0.0" y="75.5"/>
+</path>
+</polygon>
+<text uid="D2190B18-0BAB-7821-8B98-17D5F1ACD303" x="0.0" y="0.0" width="183.0" height="25.0" angle="0.0" h-align="center" v-align="middle">
+<textStyle font="Arial" color="#000000" size="12" italic="false" underline="false" weight="bold">API::BasicSource</textStyle>
+</text>
+<text uid="7E19F152-D617-EBE4-052E-17D5F1AC17E8" x="5.0" y="30.0" width="173.0" height="65.5" angle="0.0" h-align="left" v-align="top">
+<textStyle font="Consolas" color="#000000" size="12" italic="false" underline="false" weight="normal">image_name
+should_process?
+create_image_metadata
+checksum
+compute_checksum</textStyle>
+</text>
+</group>
+<group uid="052552C7-858A-4CB2-7610-17D5F1ADF134" x="90.0" y="212.0" width="180.0" height="52.0" angle="0.0">
+<polygon uid="52623A55-77B2-86ED-1AC9-17D5F1AD32E3" x="0.0" y="0.0" width="180.0" height="25.0" angle="0.0" fill-style="singleColor" fill-color="#ffffff" fill-opacity="100.0" border-style="normal" border-color="#000000" border-thickness="1">
+<path close="true">
+<point type="NORMAL" x="0.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="25.0"/>
+<point type="NORMAL" x="0.0" y="25.0"/>
+</path>
+</polygon>
+<polygon uid="C50D1FC5-314F-7BD2-730D-17D5F1AD246E" x="0.0" y="25.0" width="180.0" height="27.0" angle="0.0" fill-style="singleColor" fill-color="#ffffff" fill-opacity="100.0" border-style="normal" border-color="#000000" border-thickness="1">
+<path close="true">
+<point type="NORMAL" x="0.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="27.0"/>
+<point type="NORMAL" x="0.0" y="27.0"/>
+</path>
+</polygon>
+<text uid="271D89D9-5685-B394-72AF-17D5F1AD889F" x="0.0" y="0.0" width="180.0" height="25.0" angle="0.0" h-align="center" v-align="middle">
+<textStyle font="Arial" color="#000000" size="12" italic="false" underline="false" weight="bold">API::ReaderSource</textStyle>
+</text>
+<text uid="C84C927C-CC91-4AA8-9D85-17D5F1ADE913" x="5.0" y="30.0" width="170.0" height="17.0" angle="0.0" h-align="left" v-align="top">
+<textStyle font="Consolas" color="#000000" size="12" italic="false" underline="false" weight="normal">code</textStyle>
+</text>
+</group>
+<line uid="E2708265-5255-EA01-241B-17D5F1AE74E5" x="180.0" y="149.9999999999999" width="117.5" height="62.000000000000114" angle="0.0" type="STRAIGHT_AUTO_ROUTE" border-style="normal" border-color="#000000" border-thickness="1">
+<start connect-uid="052552C7-858A-4CB2-7610-17D5F1ADF134"/>
+<point type="NORMAL" x="0.0" y="62.000000000000114"/>
+<point type="NORMAL" x="0.0" y="31.000000000000057"/>
+<point type="NORMAL" x="117.5" y="31.000000000000057"/>
+<point type="NORMAL" x="117.5" y="0.0"/>
+<end connect-uid="997D49D6-1D72-6D83-59B2-17D5F1AC9288" style="arrow(white)"/>
+</line>
+<group uid="848644E8-8185-D0C7-38C7-17D67E377753" x="321.0" y="212.0" width="180.0" height="73.0" angle="0.0">
+<polygon uid="AC2D1AB9-3B0D-889D-26D7-17D67E37618C" x="0.0" y="0.0" width="180.0" height="25.0" angle="0.0" fill-style="singleColor" fill-color="#ffffff" fill-opacity="100.0" border-style="normal" border-color="#000000" border-thickness="1">
+<path close="true">
+<point type="NORMAL" x="0.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="25.0"/>
+<point type="NORMAL" x="0.0" y="25.0"/>
+</path>
+</polygon>
+<polygon uid="5D6410B0-9223-6881-58A5-17D67E376F65" x="0.0" y="25.0" width="180.0" height="48.0" angle="0.0" fill-style="singleColor" fill-color="#ffffff" fill-opacity="100.0" border-style="normal" border-color="#000000" border-thickness="1">
+<path close="true">
+<point type="NORMAL" x="0.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="0.0"/>
+<point type="NORMAL" x="180.0" y="48.0"/>
+<point type="NORMAL" x="0.0" y="48.0"/>
+</path>
+</polygon>
+<text uid="5974E9DA-3A70-BB4E-EAA6-17D67E37F360" x="0.0" y="0.0" width="180.0" height="25.0" angle="0.0" h-align="center" v-align="middle">
+<textStyle font="Arial" color="#000000" size="12" italic="false" underline="false" weight="bold">API::FileSource</textStyle>
+</text>
+<text uid="E8E1DE20-1B06-DF82-137B-17D67E376764" x="5.0" y="30.0" width="170.0" height="38.0" angle="0.0" h-align="left" v-align="top">
+<textStyle font="Consolas" color="#000000" size="12" italic="false" underline="false" weight="normal">image_name
+should_process?
+code</textStyle>
+</text>
+</group>
+<line uid="B90F908F-F4B0-EDD7-E9C9-17D6A4045109" x="297.5" y="149.9999999999999" width="113.5" height="62.000000000000114" angle="0.0" type="STRAIGHT_AUTO_ROUTE" border-style="normal" border-color="#000000" border-thickness="1">
+<start connect-uid="848644E8-8185-D0C7-38C7-17D67E377753"/>
+<point type="NORMAL" x="113.5" y="62.000000000000114"/>
+<point type="NORMAL" x="113.5" y="31.000000000000057"/>
+<point type="NORMAL" x="0.0" y="31.000000000000057"/>
+<point type="NORMAL" x="0.0" y="0.0"/>
+<end connect-uid="997D49D6-1D72-6D83-59B2-17D5F1AC9288" style="arrow(white)"/>
+</line>
+</sheet>
+</diagram>
