@@ -1,7 +1,6 @@
 .envrc
 *.cache
 *.png
-*.pdf
 *.xml
 /asciidoctor-fopub/
 /vendor/
